@@ -7,12 +7,12 @@
     THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
     RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER. 
 
-    Version 1.1, 2016-05-18
+    Version 1.2, 2016-05-18
 
     Please send ideas, comments and suggestions to support@granikos.eu 
 
     .LINK 
-    More information can be found at http://www.granikos.eu/en/scripts
+    More information can be found at http://scripts.granikos.eu
 
     .DESCRIPTION 
     This script adds a given IP address to an existing Receive Connector or reads an
