@@ -5,13 +5,13 @@ Add remote IP address ranges to an Exchange Server 2013 receive connctor.
 Add IP address(es) to an existing receive connector on selected or all Exchange 2013 Servers
 
 ##Inputs
-ConnectorName  
+### ConnectorName  
 Name of the connector the new IP addresses should be added to  
 
-FileName
+### FileName
 Name of the input file name containing IP addresses
 
-ViewEntireForest
+### ViewEntireForest
 View entire Active Directory forest (default FALSE)
 
 ##Outputs
@@ -26,7 +26,13 @@ Add IP addresses from ip.txt to MYCONNECTOR
 ```
 .\Add-ReceiveConnectorIpAddress.ps1 -ConnectorName REMOTECONNECTOR -FileName .\ip-new.txt -ViewEntireForest $true
 ```
+## Note
+THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
+RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
 
+##TechNet Gallery
+Find the script at TechNet Gallery
+* https://gallery.technet.microsoft.com/Add-remote-IP-address-59b84634
 
 ##Credits
 Written by: Thomas Stensitzki
