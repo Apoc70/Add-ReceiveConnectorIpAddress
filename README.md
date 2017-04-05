@@ -34,10 +34,9 @@ Find the script at TechNet Gallery
 ## Credits
 Written by: Thomas Stensitzki
 
-Find me on:
+Stay connected:
 
-* My Blog: https://www.granikos.eu/en/justcantgetenough
-* Archived Blog:	http://www.sf-tools.net/
+* My Blog: http://justcantgetenough.granikos.eu
 * Twitter: https://twitter.com/stensitzki
 * LinkedIn:	http://de.linkedin.com/in/thomasstensitzki
 * Github: https://github.com/Apoc70
