@@ -7,7 +7,7 @@
     THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
     RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER. 
 
-    Version 1.3, 2017-02-22
+    Version 1.4, 2018-09-04
 
     Please send ideas, comments and suggestions to support@granikos.eu 
 
@@ -36,6 +36,7 @@
     1.1 Sorting for Exchange servers added
     1.2 PowerShell hygiene
     1.3 PowerShell hygiene - Part II
+    1.4 Support Mailbox role added (issue #4)
 
     .PARAMETER ConnectorName  
     Name of the connector the new IP addresses should be added to  
@@ -153,8 +154,8 @@ if($ViewEntireForest) {
 
 Test-LogPath
 
-# Fetch all Exchange 2013 Servers
-$allExchangeServers = Get-ExchangeServer | Where-Object{($_.AdminDisplayVersion.Major -eq 15) -and ([string]$_.ServerRole).Contains('ClientAccess')} | Sort-Object
+# Fetch all Exchange 2013+ Servers
+$allExchangeServers = Get-ExchangeServer | Where-Object{($_.AdminDisplayVersion.Major -eq 15) -and (([string]$_.ServerRole).Contains('ClientAccess') -or ([string]$_.ServerRole).Contains('Mailbox'))} | Sort-Object
 
 foreach($Server in $AllExchangeServers) {
     Write-Output -InputObject ('Checking receive connector {0} on server {1}' -f $ConnectorName, $Server)
